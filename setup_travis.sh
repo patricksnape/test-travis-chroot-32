@@ -1,4 +1,5 @@
 if [ $T_ARCH == "x86" ]; then
+  sudo apt-get update -qq
   sudo apt-get install debootstrap
   sudo apt-get install schroot
   sudo cp precise_1386.conf /etc/schroot/chroot.d/precise_i386.conf
