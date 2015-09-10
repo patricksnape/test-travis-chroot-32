@@ -1,0 +1,19 @@
+os:
+- linux
+
+git:
+  depth: 200
+
+env:
+  matrix:
+    - PYTHON_VERSION=2.7 T_ARCH=x86
+    - PYTHON_VERSION=2.7 T_ARCH=x86_64
+
+install:
+- ./setup_travis.sh
+- wget https://raw.githubusercontent.com/menpo/condaci/v0.4.6/condaci.py -O condaci.py
+- python condaci.py setup
+
+script:
+- ~/miniconda/bin/python condaci.py build ./conda
+

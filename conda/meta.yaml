@@ -1,0 +1,11 @@
+package:
+  name: travis-test-chroot-32
+  version: 1.0
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+
