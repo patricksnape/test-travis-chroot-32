@@ -9,4 +9,4 @@ if [ $T_ARCH == "x86" ]; then
   schroot -c precise_i386 -u travis32
   sudo apt-get install build-essential checkinstall
   cd ~
-Fi
+fi
