@@ -7,7 +7,7 @@ if [ $T_ARCH == "x86" ]; then
   sudo mkdir -p /srv/chroot/precise_i386
   sudo debootstrap --variant=buildd --arch i386 precise /srv/chroot/precise_i386 http://archive.ubuntu.com/ubuntu/
   schroot -l
-  schroot -c precise_i386 -u travis32
+  schroot -c precise_i386 -u root
   sudo apt-get install build-essential checkinstall
   cd ~
 fi
