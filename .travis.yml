@@ -20,3 +20,5 @@ script:
 - ~/miniconda/bin/python -c 'import struct;print( 8 * struct.calcsize("P"))'
 - ~/miniconda/bin/python condaci.py build ./conda
 
+notifications:
+  email: false
