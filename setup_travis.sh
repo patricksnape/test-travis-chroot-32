@@ -5,7 +5,7 @@ if [ $T_ARCH == "x86" ]; then
   sudo cp precise_1386.conf /etc/schroot/chroot.d/precise_i386.conf
 
   sudo mkdir -p /srv/chroot/precise_i386
-  sudo debootstrap --variant=buildd --arch i386 precise /srv/chroot/precise_i386 http://archive.ubuntu.com/ubuntu/
-  sudo schroot -l
-  sudo schroot -c precise_i386 -u root sh -c "pwd"
+  sudo debootstrap --variant=buildd --archi=i386 precise /srv/chroot/precise_i386 http://archive.ubuntu.com/ubuntu/
+  schroot -l
+  schroot -c precise_i386 -u root
 fi
